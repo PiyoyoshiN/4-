@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>4限 ミニッツ</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div class="brand">4限 ミニッツ</div>
+      <div class="status">
+        <span id="progress">0 / 0</span>
+        <span id="score">Score: 0</span>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="meta">
+        <span class="pill" id="category">-</span>
+        <span class="pill" id="mode">-</span>
+      </div>
+
+      <h1 id="prompt">読み込み中…</h1>
+
+      <form id="choices" class="choices"></form>
+
+      <div id="feedback" class="feedback" aria-live="polite"></div>
+
+      <div id="explain" class="explain" hidden>
+        <div class="explain-title">解説</div>
+        <div id="explainBody" class="explain-body"></div>
+      </div>
+
+      <div class="actions">
+        <button id="checkBtn" class="btn primary" type="button">判定</button>
+        <button id="nextBtn" class="btn" type="button" disabled>次へ</button>
+        <button id="shuffleBtn" class="btn" type="button">シャッフル</button>
+        <button id="resetBtn" class="btn danger" type="button">リセット</button>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <small>GitHub Pages対応（静的サイト）</small>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
